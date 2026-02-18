@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine Builder - BuffNEU</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/exercise-library.html" class="nav-link">Exercise Library</a>
+        <a href="/routine-builder.html" class="nav-link nav-link--active"
+          >Routine Builder</a
+        >
+      </nav>
+    </header>
+    <main class="routine-builder">
+      <h1>Routine Builder</h1>
+      <p class="routine-builder__intro">
+        Create and edit workout routines. Add exercises, set order, and save
+        your plans.
+      </p>
+
+      <section class="routine-list-section">
+        <h2>Your Routines</h2>
+        <button type="button" class="btn btn--primary" id="btn-new-routine">
+          New Routine
+        </button>
+        <ul id="routine-list" class="routine-list" role="list">
+          <!-- Rendered by JS -->
+        </ul>
+        <p
+          id="routine-list-empty"
+          class="routine-builder__empty hidden"
+          role="status"
+        >
+          No routines yet. Create one to get started.
+        </p>
+      </section>
+
+      <section id="routine-editor" class="routine-editor hidden">
+        <h2 id="routine-editor-title">Edit Routine</h2>
+        <form id="form-routine" class="form">
+          <div class="form-group">
+            <label for="routine-name">Routine name</label>
+            <input type="text" id="routine-name" class="input" required />
+          </div>
+          <div class="form-group">
+            <label for="routine-description">Description (optional)</label>
+            <textarea
+              id="routine-description"
+              class="input"
+              rows="2"
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn btn--secondary"
+              id="btn-close-editor"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              class="btn btn--primary"
+              id="btn-save-routine"
+            >
+              Save Routine
+            </button>
+            <button
+              type="button"
+              class="btn btn--danger"
+              id="btn-delete-routine"
+            >
+              Delete Routine
+            </button>
+          </div>
+        </form>
+
+        <h3>Exercises in this routine</h3>
+        <ul id="routine-exercises" class="routine-exercises-list" role="list">
+          <!-- Rendered by JS -->
+        </ul>
+        <p
+          id="routine-exercises-empty"
+          class="routine-builder__empty hidden"
+          role="status"
+        >
+          No exercises in this routine. Add some below.
+        </p>
+
+        <h3>Add exercise</h3>
+        <div class="add-exercise">
+          <label for="add-exercise-category">Category</label>
+          <select id="add-exercise-category" class="input">
+            <option value="">All</option>
+            <option value="arms">Arms</option>
+            <option value="legs">Legs</option>
+            <option value="chest">Chest</option>
+            <option value="back">Back</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="core">Core</option>
+          </select>
+          <ul id="add-exercise-picker" class="exercise-picker" role="list">
+            <!-- Rendered by JS -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      id="modal-add-to-routine"
+      class="modal"
+      aria-labelledby="modal-add-title"
+    >
+      <h2 id="modal-add-title" class="modal__title">Add to routine</h2>
+      <form id="form-add-to-routine" class="form">
+        <p class="modal__exercise-name" id="add-modal-exercise-name"></p>
+        <div class="form-group">
+          <label for="add-sets">Sets</label>
+          <input type="number" id="add-sets" class="input" min="1" value="3" />
+        </div>
+        <div class="form-group">
+          <label for="add-reps">Reps (e.g. 10 or 10-12)</label>
+          <input type="text" id="add-reps" class="input" value="10" />
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn--secondary" id="btn-cancel-add">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn--primary">Add</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

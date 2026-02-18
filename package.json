@@ -1,0 +1,24 @@
+{
+  "name": "buffneu",
+  "version": "1.0.0",
+  "description": "BuffNEU - Track, Manage, and Build your workout routines",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/utils/seedDatabase.js"
+  },
+  "keywords": ["workout", "fitness", "routine"],
+  "author": "James Khadan, Tamiyoo Desir",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4"
+  }
+}

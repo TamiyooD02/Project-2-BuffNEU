@@ -1,0 +1,46 @@
+@import url('./modules/shared.css');
+@import url('./modules/exercise-library.css');
+@import url('./modules/routine-builder.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #0f0f1a;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.home {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.home__tagline {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.home__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.home__intro {
+  color: #888;
+  font-size: 0.95rem;
+  text-align: left;
+}

@@ -1,0 +1,140 @@
+/* Routine Builder module */
+.routine-builder {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.routine-builder h1 {
+  margin-bottom: 0.5rem;
+}
+
+.routine-builder__intro {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.routine-builder__empty {
+  color: #888;
+  font-style: italic;
+}
+
+.routine-builder__error {
+  color: #e94560;
+  list-style: none;
+}
+
+.routine-list-section {
+  margin-bottom: 2rem;
+}
+
+.routine-list-section h2 {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.routine-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.routine-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: #16213e;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #2a2a4a;
+}
+
+.routine-list-item__link {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.routine-list-item__link:hover {
+  text-decoration: underline;
+}
+
+.routine-list-item__count {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.routine-editor {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a4a;
+}
+
+.routine-editor h2,
+.routine-editor h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.routine-exercises-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.routine-exercise-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.routine-exercise-item__order {
+  color: #888;
+  min-width: 2rem;
+}
+
+.routine-exercise-item__name {
+  flex: 1;
+  min-width: 120px;
+}
+
+.routine-exercise-item__sets-reps {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.routine-exercise-item__actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.add-exercise label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #ccc;
+}
+
+.exercise-picker {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exercise-picker-item .btn {
+  white-space: nowrap;
+}
+
+.modal__exercise-name {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

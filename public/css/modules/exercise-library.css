@@ -1,0 +1,99 @@
+/* Exercise Library module */
+.exercise-library {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.exercise-library h1 {
+  margin-bottom: 0.5rem;
+}
+
+.exercise-library__intro {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-library__empty {
+  color: #888;
+  font-style: italic;
+}
+
+.exercise-library__error {
+  color: #e94560;
+  list-style: none;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters__search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exercise-card {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #2a2a4a;
+}
+
+.exercise-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.exercise-card__name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.exercise-card__description {
+  color: #bbb;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+
+.exercise-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.exercise-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exercise-card__actions .btn {
+  flex: 0 0 auto;
+}

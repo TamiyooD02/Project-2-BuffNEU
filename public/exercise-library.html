@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Library - BuffNEU</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/exercise-library.html" class="nav-link nav-link--active"
+          >Exercise Library</a
+        >
+        <a href="/routine-builder.html" class="nav-link">Routine Builder</a>
+      </nav>
+    </header>
+    <main class="exercise-library">
+      <h1>Exercise Library</h1>
+      <p class="exercise-library__intro">
+        Browse exercises by muscle group. Add your own or use the list to build
+        routines.
+      </p>
+
+      <section class="filters">
+        <div class="filters__categories">
+          <button type="button" class="btn btn--filter active" data-category="">
+            All
+          </button>
+          <button type="button" class="btn btn--filter" data-category="arms">
+            Arms
+          </button>
+          <button type="button" class="btn btn--filter" data-category="legs">
+            Legs
+          </button>
+          <button type="button" class="btn btn--filter" data-category="chest">
+            Chest
+          </button>
+          <button type="button" class="btn btn--filter" data-category="back">
+            Back
+          </button>
+          <button
+            type="button"
+            class="btn btn--filter"
+            data-category="shoulders"
+          >
+            Shoulders
+          </button>
+          <button type="button" class="btn btn--filter" data-category="core">
+            Core
+          </button>
+        </div>
+        <div class="filters__search">
+          <label for="search-input" class="visually-hidden"
+            >Search exercises</label
+          >
+          <input
+            type="search"
+            id="search-input"
+            class="input input--search"
+            placeholder="Search exercises..."
+            autocomplete="off"
+          />
+        </div>
+        <button type="button" class="btn btn--primary" id="btn-add-exercise">
+          Add Exercise
+        </button>
+      </section>
+
+      <div id="exercise-list" class="exercise-grid" role="list">
+        <!-- Rendered by JS -->
+      </div>
+      <p
+        id="exercise-list-empty"
+        class="exercise-library__empty hidden"
+        role="status"
+      >
+        No exercises match your filters. Try a different category or search, or
+        add a new exercise.
+      </p>
+    </main>
+
+    <dialog
+      id="modal-exercise"
+      class="modal"
+      aria-labelledby="modal-exercise-title"
+    >
+      <h2 id="modal-exercise-title" class="modal__title">Add Exercise</h2>
+      <form id="form-exercise" class="form">
+        <div class="form-group">
+          <label for="exercise-name">Name</label>
+          <input type="text" id="exercise-name" class="input" required />
+        </div>
+        <div class="form-group">
+          <label for="exercise-category">Category</label>
+          <select id="exercise-category" class="input" required>
+            <option value="">Select category</option>
+            <option value="arms">Arms</option>
+            <option value="legs">Legs</option>
+            <option value="chest">Chest</option>
+            <option value="back">Back</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="core">Core</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exercise-description">Description</label>
+          <textarea
+            id="exercise-description"
+            class="input"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exercise-equipment">Equipment (optional)</label>
+          <input type="text" id="exercise-equipment" class="input" />
+        </div>
+        <div class="form-group">
+          <label for="exercise-difficulty">Difficulty</label>
+          <select id="exercise-difficulty" class="input">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button
+            type="button"
+            class="btn btn--secondary"
+            id="btn-cancel-exercise"
+          >
+            Cancel
+          </button>
+          <button type="submit" class="btn btn--primary">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
