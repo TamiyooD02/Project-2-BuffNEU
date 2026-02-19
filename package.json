@@ -7,18 +7,22 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
-    "seed": "node server/utils/seedDatabase.js"
+    "seed": "node server/utils/seedDatabase.js && node server/data/seedWorkouts.js"
   },
-  "keywords": ["workout", "fitness", "routine"],
+  "keywords": [
+    "workout",
+    "fitness",
+    "routine"
+  ],
   "author": "James Khadan, Tamiyoo Desir",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "mongodb": "^6.3.0"
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "mongodb": "^6.21.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.4"
+    "eslint": "^8.57.1",
+    "prettier": "^3.8.1"
   }
 }

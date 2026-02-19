@@ -1,0 +1,65 @@
+.workout-log {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.workout-log h1 {
+  margin-bottom: 0.5rem;
+}
+
+.workout-log__intro {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.workout-form-section,
+.workout-history-section {
+  background: #16213e; 
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a4a;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #2a2a4a;
+  display: block;
+}
+
+.form-actions {
+  margin-top: 1rem;
+}
+
+.routine-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.routine-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #1b1f3b;
+  border-radius: 6px;
+  border: 1px solid #2a2a4a;
+  margin-bottom: 0.5rem;
+}
+
+.routine-list-item button {
+  margin-left: 0.5rem;
+}
+
+.workout-form-section .form {
+  max-width: 400px;
+  margin: 0 auto;
+}

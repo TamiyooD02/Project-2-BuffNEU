@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Workouts - BuffNEU</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/modules/workout-log.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/exercise-library.html" class="nav-link">Exercise Library</a>
+        <a href="/routine-builder.html" class="nav-link">Routine Builder</a>
+        <a href="/workout-log.html" class="nav-link nav-link--active">Log Workouts</a>
+      </nav>
+    </header>
+
+    <main class="workout-log">
+      <h1>Log Your Workouts</h1>
+      <p class="workout-log__intro">
+        Add your workouts below and see your workout history.
+      </p>
+
+      <!-- Form to add new workout -->
+      <section class="workout-form-section">
+        <h2>Add Workout</h2>
+        <form id="form-workout" class="form">
+          <div class="form-group">
+            <label for="workout-date">Date</label>
+            <input type="date" id="workout-date" class="input" required />
+          </div>
+          <div class="form-group">
+            <label for="exercise-name">Exercise Name</label>
+            <input type="text" id="exercise-name" class="input" required />
+          </div>
+          <div class="form-group">
+            <label for="workout-sets">Sets</label>
+            <input type="number" id="workout-sets" class="input" min="1" value="3" required />
+          </div>
+          <div class="form-group">
+            <label for="workout-reps">Reps</label>
+            <input type="number" id="workout-reps" class="input" min="1" value="10" required />
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Add Workout</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Workout history -->
+      <section class="workout-history-section">
+        <h2>Workout History</h2>
+        <ul id="workout-history" class="routine-list" role="list">
+
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="/js/modules/workout-log.js"></script>
+
+  </body>
+</html>

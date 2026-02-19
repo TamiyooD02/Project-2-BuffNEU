@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import exercisesRouter from './routes/exercises.js';
 import routinesRouter from './routes/routines.js';
+import workoutsRouter from './routes/workouts.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const publicPath = path.join(__dirname, '..', 'public');
@@ -16,6 +17,8 @@ app.use(express.static(publicPath));
 
 app.use('/api/exercises', exercisesRouter);
 app.use('/api/routines', routinesRouter);
+
+app.use('/api/workouts', workoutsRouter);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));

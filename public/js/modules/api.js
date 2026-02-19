@@ -73,4 +73,27 @@ export const api = {
       return request(`/api/routines/${id}`, { method: 'DELETE' });
     },
   },
+  workouts: {
+  getAll() {
+    return request('/api/workouts');
+  },
+  getOne(id) {
+    return request(`/api/workouts/${id}`);
+  },
+  create(data) {
+    return request('/api/workouts', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  },
+  update(id, data) {
+    return request(`/api/workouts/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+  },
+  delete(id) {
+    return request(`/api/workouts/${id}`, { method: 'DELETE' });
+  },
+},
 };
