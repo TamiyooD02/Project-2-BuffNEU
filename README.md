@@ -164,8 +164,7 @@ npm run format
 ```
 
 ## Video Demo
-
-[Link to your demo video on YouTube/Google Drive]
+https://www.loom.com/share/cad1f0df7919410dad8f2d1b785f2ac8
 
 ## License
 
