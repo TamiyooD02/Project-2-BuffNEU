@@ -32,7 +32,7 @@ BuffNEU is a web application designed to help users track and organize their fit
 ## Instructions to Build
 
 ### Prerequisites
-- Node.js (v18 or higher)
+- Node.js
 - Docker Desktop (for MongoDB)
 - Git
 
@@ -40,7 +40,7 @@ BuffNEU is a web application designed to help users track and organize their fit
 
 1. **Clone the repository**
 ```bash
-   git clone [your-repository-url]
+   git clone 
    cd buffneu
 ```
 
