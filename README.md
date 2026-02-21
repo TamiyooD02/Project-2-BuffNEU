@@ -6,7 +6,7 @@ James Khadan - [khadan.j@northeastern.edu]
 
 ## Class Link
 CS 5610 Web Development - Spring 2026
-(https://northeastern.instructure.com/courses/245751)
+(https://johnguerra.co/classes/webDevelopment_online_spring_2026/)
 
 ## Project Objective
 BuffNEU is a web application designed to help users track and organize their fitness journey. Users can log individual workout sessions by recording the date, exercises performed, sets, and reps completed, then review their workout history over time to monitor progress. The application also features an exercise library where users can browse exercises by category and use them to build custom workout routines. 
@@ -144,6 +144,8 @@ PROJECT2-NEUBUFF/
 ├── package-lock.json
 └── README.md
 ```
+## Deployment
+https://project-2-buffneu.onrender.com/
 
 ## Development
 
