@@ -40,7 +40,7 @@ BuffNEU is a web application designed to help users track and organize their fit
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/TamiyooD02/Project-2---NEUBuff.git
+   git clone https://github.com/TamiyooD02/Project-2-BuffNEU.git
 ```
 
 2. **Install dependencies**
