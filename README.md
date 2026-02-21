@@ -172,3 +172,5 @@ https://www.loom.com/share/cad1f0df7919410dad8f2d1b785f2ac8
 MIT License - see LICENSE file for details
 
 ## AI Acknowledgments/Prompts
+
+- Gen AI (specifically Claude) was used to create a template of this README file before it was edited accordingly to match the scope of this project. The prompt was "Acting like your a senior full stack developer, provide a template of a readme file for an gihub repo of a project you just completed."
