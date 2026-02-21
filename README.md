@@ -174,3 +174,6 @@ MIT License - see LICENSE file for details
 ## AI Acknowledgments/Prompts
 
 - Gen AI (specifically Claude) was used to create a template of this README file before it was edited accordingly to match the scope of this project. The prompt was "Acting like your a senior full stack developer, provide a template of a readme file for an gihub repo of a project you just completed."
+
+Github Copilot - In-line Code Completions
+Claude - “How do I connect my MongoDB database to my Node application with a .env file”, "How do I deploy my website using Node + MongoDB"
