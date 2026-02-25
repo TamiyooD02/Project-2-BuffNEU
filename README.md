@@ -177,3 +177,4 @@ MIT License - see LICENSE file for details
 
 Github Copilot - In-line Code Completions
 Claude - “How do I connect my MongoDB database to my Node application with a .env file”, "How do I deploy my website using Node + MongoDB"
+
